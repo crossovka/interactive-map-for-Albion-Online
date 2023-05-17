@@ -1,0 +1,178 @@
+.sidenav {
+	position: fixed;
+	top: 36px;
+	left: 2px;
+	height: 100%;
+	width: 35%;
+	overflow: hidden;
+	z-index: 2;
+	background-color: rgb(58, 55, 55);
+	&__container {
+	}
+
+	&__tab {
+		display: flex;
+		flex-wrap: nowrap;
+		overflow: hidden;
+		margin-bottom: 5px;
+		background-color: rgb(89, 85, 80);
+	}
+
+	&__content {
+	}
+
+	&__wpapper {
+		display: flex;
+		background-color: #444;
+		display: grid;
+		grid-template-columns: 100px 100px 100px 100px 100px;
+		grid-gap: 0px;
+		justify-content: center;
+		border: 3px solid #595959;
+		border-right: 0px;
+		border-left: 0px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		margin-top: 100px;
+	}
+}
+.tab {
+	&__btn {
+		grid-gap: 0px;
+		float: left;
+		padding: 14px 16px;
+		cursor: pointer;
+		transition: 0.3s;
+		font-size: 1rem;
+		color: aliceblue;
+		background-color: inherit;
+		&:hover {
+			background-color: #bec6d6;
+		}
+		&:active {
+			background-color: rgb(58, 55, 55);
+		}
+	}
+}
+.box {
+	color: #aaa;
+	text-align: center;
+	font-size: 1rem;
+	user-select: none;
+	&__img {
+		user-select: none;
+		width: 50px;
+		height: 50px;
+	}
+}
+
+// адаптивчик
+@media (max-width: 1306px) {
+	.tab__btn {
+		float: left;
+		padding: 14px 12px;
+		font-size: 1rem;
+	}
+	.sidenav__wpapper {
+		-ms-grid-columns: 80px 0px 80px 0px 80px 0px 80px 0px 80px;
+		grid-template-columns: 80px 80px 80px 80px 80px;
+		grid-gap: 0px;
+	}
+}
+@media (max-width: 1065px) {
+	.tab__btn {
+		float: left;
+		padding: 14px 10px;
+		font-size: 1rem;
+	}
+	.sidenav__wpapper {
+		-ms-grid-columns: 50px 0px 50px 0px 50px 0px 50px 0px 50px;
+		grid-template-columns: 50px 50px 50px 50px 50px;
+		grid-gap: 0px;
+	}
+}
+@media (max-width: 867px) {
+	.tab__btn {
+		float: left;
+		padding: 7px 8px;
+		font-size: 0.8rem;
+	}
+	.sidenav__wpapper {
+		-ms-grid-columns: 50px 0px 50px 0px 50px 0px 50px 0px 50px;
+		grid-template-columns: 50px 50px 50px 50px 50px;
+		grid-gap: 0px;
+	}
+}
+
+// Старый scss, который был скомпилирован без моего ведома
+
+// .sidenav {
+// 	position: fixed;
+// 	top: 36px;
+// 	left: 2px;
+// 	height: 100%;
+// 	width: 35%;
+// 	overflow: hidden;
+// 	z-index: 2;
+// 	background-color: rgb(58, 55, 55);
+// }
+// .sidenav__tab {
+// 	display: -webkit-box;
+// 	display: -ms-flexbox;
+// 	display: flex;
+// 	-ms-flex-wrap: nowrap;
+// 	flex-wrap: nowrap;
+// 	overflow: hidden;
+// 	margin-bottom: 5px;
+// 	background-color: rgb(89, 85, 80);
+// }
+// .sidenav__wpapper {
+// 	background-color: #444;
+// 	display: -ms-grid;
+// 	display: grid;
+// 	-ms-grid-columns: 100px 0px 100px 0px 100px 0px 100px 0px 100px;
+// 	grid-template-columns: 100px 100px 100px 100px 100px;
+// 	grid-gap: 0px;
+// 	-webkit-box-pack: center;
+// 	-ms-flex-pack: center;
+// 	justify-content: center;
+// 	border: 3px solid #595959;
+// 	border-right: 0px;
+// 	border-left: 0px;
+// 	padding-top: 5px;
+// 	padding-bottom: 5px;
+// 	margin-top: 100px;
+// }
+// .tab__btn {
+// 	float: left;
+// 	padding: 14px 16px;
+// 	cursor: pointer;
+// 	-webkit-transition: 0.3s;
+// 	transition: 0.3s;
+// 	font-size: 1rem;
+// 	color: aliceblue;
+// 	background-color: inherit;
+// }
+// .tab__btn:hover {
+// 	background-color: #bec6d6;
+// }
+// .tab__btn:active {
+// 	background-color: rgb(58, 55, 55);
+// }
+// .box {
+// 	color: #aaa;
+// 	text-align: center;
+// 	font-size: 1rem;
+// 	-webkit-user-select: none;
+// 	-moz-user-select: none;
+// 	-ms-user-select: none;
+// 	user-select: none;
+// }
+// .box__img {
+// 	-webkit-user-select: none;
+// 	-moz-user-select: none;
+// 	-ms-user-select: none;
+// 	user-select: none;
+// 	width: 50px;
+// 	height: 50px;
+// }

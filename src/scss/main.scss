@@ -1,0 +1,61 @@
+// обнуление
+@import "./null.scss";
+
+// ограничивающие контейнеры
+@import "containers.scss";
+
+// переменные и переиспользование по bem
+@import "./vars.scss";
+
+/*  -------------------  */
+// блоки
+
+// ограничивающие контейнеры
+@import "./containers.scss";
+
+// variables
+@import "./vars.scss";
+
+// топбар
+@import "./blocks/topbar.scss";
+
+// бургер в топбаре
+@import "./blocks/burger.scss";
+
+// меню
+@import "./blocks/sidenav.scss";
+
+// placeholder
+// @import "./blocks/search.scss";
+/*  -------------------  */
+
+// основной контент app
+@import "./blocks/app-content.scss";
+
+// шрифты
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;800;900&display=swap");
+
+/*  -------------------  */
+html,
+body {
+	font-family: $ff;
+	font-size: 18px;
+	// 1 rem
+	color: #ffffff;
+	background-color: #ffffff;
+}
+.app {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border: 2px solid #343b48;
+	-webkit-box-sizing: border-box;
+
+	height: 100%;
+	// margin-top: 32px;
+	// padding: 20px;
+	overflow-y: auto;
+}

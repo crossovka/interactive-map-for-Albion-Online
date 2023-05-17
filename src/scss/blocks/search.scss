@@ -1,0 +1,23 @@
+// form{
+// 	position:absolute; 
+// 	top: 50px; 
+// 	right: 15px;
+// }
+// .search {
+// 	position: relative;
+//     display: inline-block;
+// }
+.search {
+	position:absolute; 
+	top: 50px; 
+	right: 15px;
+	&__location {
+		background-color: inherit;
+		padding: 1px 1px 1px 5px;
+		text-transform: capitalize;
+		color: $wh-tx;
+		&:active{	
+			border: 1px outset rgb(55, 108, 148);
+		}
+	}
+}
